@@ -13,7 +13,7 @@
 	<body>
 		<nav>
 			<img class="logo" src="/logodocsmapADOBE.png" alt="DocsMap Logo" />
-		  </nav>
+		  </nav> 
 		  <main>
 			<section>
 			  <div class="fixed">
@@ -339,6 +339,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
+  margin-bottom: 20rem;
 } 
 
 .card {
@@ -557,7 +558,7 @@
   @supports (animation-timeline: scroll()) {
     @media(prefers-reduced-motion: no-preference) {
       article {
-        view-timeline: --article;
+        view-timeline: --article; 
       }
 
       .mapdark {
@@ -687,6 +688,12 @@
         transform-origin: 50% 0;
       }
 
+      /* .pricing-cards {
+        animation: view() both linear;
+        animation-timeline: --article;
+        animation-range: entry-crossing 75% entry-crossing 100%;
+      } */
+
       /* POSIBLE SOLUCIÓN */
       /* @media (max-width: 768px) {
   .fixed img {
@@ -738,7 +745,7 @@
           filter: blur(4rem);
         }
       }
-      @keyframes unmask {
+      @keyframes unmask { 
         to {
           mask-position: 0 0;
         }
